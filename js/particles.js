@@ -2,10 +2,10 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 120,
+      "value": 150,
       "density": {
         "enable": true,
-        "value_area": 700
+        "value_area": 800
       }
     },
     "color": {
@@ -14,7 +14,7 @@ particlesJS("particles-js", {
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 1,
+        "width": 3,
         "color": "#009688"
       },
       "polygon": {
@@ -46,7 +46,7 @@ particlesJS("particles-js", {
       "distance": 150,
       "color": "#009688",
       "opacity": 0.4,
-      "width": 1
+      "width": 3
     },
     "move": {
       "enable": true,
