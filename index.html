@@ -8,6 +8,7 @@
         <meta name="description" content="It is a personal website of Mir Lutfur Rahman">
         <meta name="keywords" content="Mir, Lutfur, Rahman, Mir Lutfur Rahman, MLR">
         <meta name="author" content="Mir Lutfur Rahman">
+         <script src="js/particles.js"></script> 
         <link href="https://fonts.googleapis.com/css?family=Amiri|Bree+Serif&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "icon" href="images/mlr.jpg" type="image/x-icon"> 
@@ -15,7 +16,7 @@
             html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Amiri', serif;}
             #name{
                 font-family: 'Bree Serif', serif;
-                -webkit-text-stroke-width: 2px; 
+                -webkit-text-stroke-width: 1px; 
                 -webkit-text-stroke-color: white;
                 color:black;
             }
@@ -23,13 +24,31 @@
                 margin:0px;
                 padding:0px;
             }
+            // SASS Variables.
+            $text: #fff;
+            $link: #e34234;
+            $link-hover: #ba160c;
+
+            canvas {
+              display: block;
+              vertical-align: bottom;
+            }
+
+            #particles-js {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+            }
+
         </style>
+            
     </head>
     <body class="w3-light-grey">
 
         <!-- Page Container -->
         <div class="w3-content w3-brown" style="max-width:1400px;">
-
+          
+          <div id="particles-js"></div>  
           <!-- The Grid -->
           <div class="w3-row-padding">
 
