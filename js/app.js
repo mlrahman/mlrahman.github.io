@@ -1,4 +1,4 @@
-* Otherwise just put the config content (json): */
+
 
 particlesJS('particles-js',
   
