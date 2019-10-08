@@ -57,8 +57,9 @@
               <div class="w3-white w3-text-grey w3-card-4  w3-border w3-border-teal" style="min-height:594px;">
                 <div class="w3-display-container">
                   <img src="images/mlr.jpg" style="width:100%" alt="MLR Avatar">
-                  <div class="w3-display-bottomleft w3-container w3-teal w3-padding-8 w3-animate-zoom">
-                    <h2>Mir Lutfur Rahman</h2>
+                  <div class="w3-display-bottomleft w3-container w3-teal w3-padding-small w3-animate-zoom">
+                    <h2 class="w3-hide-medium w3-hide-small" style="padding:0px;margin:0px;">Mir Lutfur Rahman</h2>
+                    <h3 class="w3-hide-large" style="padding:0px;margin:0px;">Mir Lutfur Rahman</h3>
                   </div>
                 </div>
                 <div class="w3-container">
@@ -171,7 +172,13 @@
                 
                 <!-- Section 2 -->
                 <div class="w3-container w3-padding w3-animate-zoom" style="display:none;" id="section_2">
-                
+                    <div class="w3-container">
+                        <h3 style="margin:0px;" class="w3-text-teal">Lecturer<br>
+                        <hr style="width:70px;height:3px;margin:0px 0px 12px 0px;" class="w3-teal"></h3>
+                        <p class="w3-medium w3-justify w3-text-brown" style="margin:0px;">May, 2018 - <button class="w3-btn w3-round-large w3-brown w3-small">Present</button></p>
+                        <p class="w3-large w3-justify" style="margin:0px;">Department of Computer Science & Engineering</p>
+                        <p class="w3-xlarge w3-justify" style="margin:0px;">North East University Bangladesh</p>
+                    </div>
                 </div>
                 <div  id="expand_section_2" class="w3-container w3-center w3-animate-zoom" style="margin:8px 0px 0px 0px;padding:0px;display:none;">
                     <button class="w3-btn w3-round-large w3-teal w3-small" onclick="expand(2)" ><i class="fa fa-angle-double-down"></i> See More</button>
@@ -252,7 +259,7 @@
                         
                         //console.log('call_height: '+x);
                         //setTimeout(test_width, 1000);
-                        if(x>451)
+                        if(x>453)
                         {
                                document.getElementById("section_"+i).style.height='420px';
                                document.getElementById("section_"+i).style.overflow='hidden';
