@@ -248,7 +248,7 @@
                     function test_width(i)
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
-                        //console.log('height: '+x);
+                        console.log('height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>451)
                         {
@@ -264,25 +264,16 @@
                     
                     function goto(j)
                     {
+                           document.getElementById("parent_section").style.height='483px';
                            for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
+                                document.getElementById("section_"+j).style.overflow='visible';
                                 document.getElementById("section_"+i).style.display='none';
                            }
                            document.getElementById("section_title_"+j).style.display='block';
+                           test_width(j);
                            document.getElementById("section_"+j).style.display='block';
-                           document.getElementById("section_"+j).style.overflow='visible';
-                           document.getElementById("parent_section").style.height='483px';
-                           var x=document.getElementById("section_"+j).offsetHeight;
-                            //console.log('height: '+x);
-                            //setTimeout(test_width, 1000);
-                            if(x>451)
-                            {
-                                   document.getElementById("section_"+j).style.height='420px';
-                                   document.getElementById("section_"+j).style.overflow='hidden';
-                                   /* hide other expand button */
-                                   document.getElementById("expand_section_"+j).style.display='block';
-                            }
                     }
                     
                 </script>
