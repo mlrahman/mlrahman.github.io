@@ -249,7 +249,7 @@
                     function test_width(i)
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
-                        section_height[i]=x;
+                        
                         console.log('height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>451)
@@ -262,7 +262,11 @@
                     }
                     /* default call all the section */
                     for(var i=1;i<=8;i++)
+                    {
+                        
+                        section_height[i]=document.getElementById("section_"+i).offsetHeight;
                         test_width(i);
+                    }
                     
                     function goto(j)
                     {
@@ -271,10 +275,11 @@
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
-                                document.getElementById("section_"+i).style.height=section_height[i];
                            }
                            document.getElementById("section_title_"+j).style.display='block';
                            document.getElementById("section_"+j).style.display='block';
+                           document.getElementById("section_"+j).style.height=section_height[j];
+                           document.getElementById("section_"+j).style.overflow='visible';
                            test_width(j);
                            
                     }
