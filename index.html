@@ -433,6 +433,11 @@
                         document.getElementById("expand_section_"+i).style.display='none';
                         document.getElementById("parent_section").style.height='auto';
                         document.getElementById("section_"+i).style.height='auto';
+                        var x=document.getElementById("section_"+i).offsetHeight;
+                        x=x-483;
+                        var y=document.getElementById("particles-js").offsetHeight;
+                        y=y+x;
+                        document.getElementById("particles-js").style.height=y+'px';
                     }
                     function test_width(i)
                     {
@@ -462,6 +467,7 @@
                     function goto(j)
                     {
                            document.getElementById("parent_section").style.height='483px';
+                            document.getElementById("particles-js").style.height='auto';
                            for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
