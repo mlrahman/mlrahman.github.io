@@ -239,6 +239,7 @@
                 <!-- End of section 8 -->
                 
                 <script>
+                    var section_height=[];
                     function expand(i)
                     {
                         document.getElementById("expand_section_"+i).style.display='none';
@@ -248,7 +249,8 @@
                     function test_width(i)
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
-                        console.log('cc-height: '+x);
+                        section_height[i]=x;
+                        console.log('height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>451)
                         {
@@ -269,10 +271,10 @@
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
+                                document.getElementById("section_"+i).style.height=section_height[i];
                            }
                            document.getElementById("section_title_"+j).style.display='block';
                            document.getElementById("section_"+j).style.display='block';
-                           document.getElementById("section_"+j).style.overflow='visible';
                            test_width(j);
                            
                     }
