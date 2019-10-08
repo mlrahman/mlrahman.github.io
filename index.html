@@ -250,7 +250,7 @@
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
                         
-                        console.log('height: '+x);
+                        console.log('call_height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>451)
                         {
@@ -278,10 +278,11 @@
                            }
                            document.getElementById("section_title_"+j).style.display='block';
                            document.getElementById("section_"+j).style.display='block';
-                           document.getElementById("section_"+j).style.height=section_height[j];
                            document.getElementById("section_"+j).style.overflow='visible';
-                           test_width(j);
+                           document.getElementById("section_"+j).style.height=(section_height[j]+'px');
                            
+                           console.log('new_set_height: '+document.getElementById("section_"+j).style.height);
+                           test-width(j);
                     }
                     
                 </script>
