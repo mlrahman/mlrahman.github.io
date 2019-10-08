@@ -157,11 +157,11 @@
                     function test_width(i)
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
-                        //console.log('height: '+x);
+                        console.log('height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>451)
                         {
-                               document.getElementById("section_"+i).style.height='420';
+                               document.getElementById("section_"+i).style.height='420px';
                                document.getElementById("section_"+i).style.overflow='hidden';
                         }
                     }
