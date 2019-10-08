@@ -153,6 +153,15 @@
                     <a href="https://github.com/mlrahman" style="text-decoration:none;" target="_blank"><i class="fa fa-github w3-hover-teal w3-xxxlarge"></i></a>
                     <a href="file/mlr_cv.pdf" style="text-decoration:none;" target="_blank"><p class="w3-large w3-text-teal">Click here for my CV</p></a>
                 </div>
+                <script>
+                    function test_width()
+                    {
+                        var x=document.getElementById("section_1").offsetHeight;
+                        console.log('width: '+x);
+                        setTimeout(test_width, 500);
+                    }
+                    test_width();
+                </script>
               </div>
 
               
