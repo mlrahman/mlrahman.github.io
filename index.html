@@ -175,8 +175,8 @@
                     <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
                         <p style="margin:0px;" class="w3-xlarge"><b>Lecturer</b></p>
                         <p class="w3-medium w3-justify w3-text-teal" style="margin:0px;"><b>May, 2018 - Present</b></p>
-                        <p class="w3-large w3-justify" style="margin:0px;"><b>Department of Computer Science & Engineering</b></p>
-                        <p class="w3-xlarge w3-justify" style="margin:0px;"><b>North East University Bangladesh</b></p>
+                        <p class="w3-large w3-justify" style="margin:0px;">Department of Computer Science & Engineering</p>
+                        <p class="w3-xlarge w3-justify" style="margin:0px;">North East University Bangladesh</p>
                         <p class="w3-medium w3-justify w3-text-grey" style="margin:0px;">
                             The main responsibility is to teach assigned courses in Computer Science & Engineering department at North East University Bangladesh.
                             Furthermore, plan and prepare appropriately the assigned courses and lectures by following the syllabus.
@@ -203,7 +203,7 @@
                     <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
                         <p style="margin:0px;" class="w3-xlarge"><b>Web Developer</b></p>
                         <p class="w3-medium w3-justify w3-text-teal" style="margin:0px;"><b>February, 2018 - July, 2018</b></p>
-                        <p class="w3-xlarge w3-justify" style="margin:0px;"><b>Veechi Technology</b></p>
+                        <p class="w3-xlarge w3-justify" style="margin:0px;">Veechi Technology</p>
                         <p class="w3-medium w3-justify w3-text-grey" style="margin:0px;">
                             It was a remote job. The main responsibility was the accomplishment of the assigned task within the given time. I had completed a full online delivery system using different web technologies. 
                         </p>
@@ -212,7 +212,7 @@
                     <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
                         <p style="margin:0px;" class="w3-xlarge"><b>Vice President</b></p>
                         <p class="w3-medium w3-justify w3-text-teal" style="margin:0px;"><b>July, 2017 - January, 2019</b></p>
-                        <p class="w3-xlarge w3-justify" style="margin:0px;"><b>NEUB CSE Society</b></p>
+                        <p class="w3-xlarge w3-justify" style="margin:0px;">NEUB CSE Society</p>
                         <p class="w3-medium w3-justify w3-text-grey" style="margin:0px;">
                             It was a voluntary job. The candidate for this position is elected by the vote of the students. The main responsibility was to conduct the committee of the Computer Science & Engineering Society in North East University Bangladesh. It also includes the organizing of different types of events such as seminars, workshops, and tutorials related to computer science, programming contest, robotics contest, etc. 
                         </p>
@@ -221,7 +221,7 @@
                     <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
                         <p style="margin:0px;" class="w3-xlarge"><b>Executive Member</b></p>
                         <p class="w3-medium w3-justify w3-text-teal" style="margin:0px;"><b>February, 2015 - May, 2016</b></p>
-                        <p class="w3-xlarge w3-justify" style="margin:0px;"><b>NEUB CSE Society</b></p>
+                        <p class="w3-xlarge w3-justify" style="margin:0px;">NEUB CSE Society</p>
                         <p class="w3-medium w3-justify w3-text-grey" style="margin:0px;">
                             It was a voluntary job. The candidate for this position is elected by the vote of the students. The main responsibility was to help the Computer Science & Engineering Society of North East University Bangladesh for organizing different types of events such as seminars, workshops, and tutorials related to computer science, programming contest, robotics contest, etc. 
                         </p>
@@ -304,7 +304,7 @@
                     {
                         var x=document.getElementById("section_"+i).offsetHeight;
                         
-                        console.log('height: '+x);
+                        //console.log('height: '+x);
                         //setTimeout(test_width, 1000);
                         if(x>453)
                         {
@@ -317,10 +317,12 @@
                     /* default call all the section */
                     for(var i=1;i<=8;i++)
                     {
-                        
+                        document.getElementById("section_"+i).style.display='block';
                         section_height[i]=document.getElementById("section_"+i).offsetHeight;
-                        test_width(i);
+                        document.getElementById("section_"+i).style.display='none';
+                        console.log('initial height: '+section_height[i]);
                     }
+                    test_width(1);
                     
                     function goto(j)
                     {
