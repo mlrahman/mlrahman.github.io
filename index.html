@@ -154,13 +154,18 @@
                     <a href="file/mlr_cv.pdf" style="text-decoration:none;" target="_blank"><p class="w3-large w3-text-teal">Click here for my CV</p></a>
                 </div>
                 <script>
-                    function test_width()
+                    function test_width(i)
                     {
-                        var x=document.getElementById("section_1").offsetHeight;
-                        console.log('height: '+x);
-                        setTimeout(test_width, 1000);
+                        var x=document.getElementById("section_"+i).offsetHeight;
+                        //console.log('height: '+x);
+                        //setTimeout(test_width, 1000);
+                        if(x>451)
+                        {
+                               document.getElementById("section_"+i).style.height='420';
+                               document.getElementById("section_"+i).style.overflow='hidden';
+                        }
                     }
-                    test_width();
+                    test_width(1);
                 </script>
               </div>
 
