@@ -126,14 +126,14 @@
                         <div class="w3-dropdown-hover w3-right w3-white w3-margin-top">
                             <i class="fa fa-reorder w3-xlarge w3-teal" style="cursor:pointer;"></i>
                             <div class="w3-dropdown-content w3-bar-block w3-black w3-animate-zoom w3-opacity-minxx" style="right:0;">
-                                <a href="#" onclick="goto(1)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-id-badge"></i> About Me</a>
-                                <a href="#" onclick="goto(2)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-briefcase"></i> Work Experience</a>
-                                <a href="#" onclick="goto(3)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-graduation-cap"></i> Education</a>
-                                <a href="#" onclick="goto(4)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-trophy"></i> Achievements</a>
-                                <a href="#" onclick="goto(5)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-book"></i> Publications</a>
-                                <a href="#" onclick="goto(6)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-gears"></i> Projects</a>
-                                <a href="#" onclick="goto(7)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-check-square-o"></i> Skills</a>
-                                <a href="#" onclick="goto(8)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-code-fork"></i> Extra-Curricular</a>
+                                <a style="cursor:pointer;" onclick="goto(1)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-id-badge"></i> About Me</a>
+                                <a style="cursor:pointer;" onclick="goto(2)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-briefcase"></i> Work Experience</a>
+                                <a style="cursor:pointer;" onclick="goto(3)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-graduation-cap"></i> Education</a>
+                                <a style="cursor:pointer;" onclick="goto(4)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-trophy"></i> Achievements</a>
+                                <a style="cursor:pointer;" onclick="goto(5)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-book"></i> Publications</a>
+                                <a style="cursor:pointer;" onclick="goto(6)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-gears"></i> Projects</a>
+                                <a style="cursor:pointer;" onclick="goto(7)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-check-square-o"></i> Skills</a>
+                                <a style="cursor:pointer;" onclick="goto(8)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-border-teal"><i class="fa fa-code-fork"></i> Extra-Curricular</a>
                             </div>
                         </div>
                         </div>
@@ -266,10 +266,11 @@
                     {
                            for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
+                                document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
                            }
                            document.getElementById("section_title_"+j).style.display='block';
-                           document.getElementById("section_"+i).style.display='block';
+                           document.getElementById("section_"+j).style.display='block';
                            document.getElementById("parent_section").style.height='483px';
                            test_width(j);
                     }
