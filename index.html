@@ -115,28 +115,16 @@
                         <h2 class="w3-text-grey w3-padding-16 w3-margin-left" id="section_title_1"><i class="fa fa-id-badge w3-xxlarge w3-text-teal"></i> About Me</h2>
                     </div>
                     <div class="w3-col" style="width:20%;">
-                        <div class="w3-dropdown-click">
+                        <div class="w3-dropdown-hover">
                             <h2 class="w3-padding-16 w3-right-align w3-margin-right">
-                                <button onmouseover="menu_toggle()" onmouseout="menu_toggle()">
-                                    <i class="fa fa-reorder w3-xlarge w3-teal" style="cursor:pointer;"></i>
-                                </button>
+                                <i class="fa fa-reorder w3-xlarge w3-teal" style="cursor:pointer;"></i>
                             </h2>
-                            <div id="menu" onmouseover="menu_toggle()" onmouseout="menu_toggle()" class="w3-dropdown-content w3-bar-block w3-teal w3-opacity-min">
+                            <div class="w3-dropdown-content w3-bar-block w3-teal w3-opacity-min">
                                 <a href="#" class="w3-bar-item w3-button w3-hover-black">Link 1</a>
                                 <a href="#" class="w3-bar-item w3-button w3-hover-black">Link 2</a>
                                 <a href="#" class="w3-bar-item w3-button w3-hover-black">Link 3</a>
                             </div>
                         </div>
-                        <script>
-                            function menu_toggle() {
-                              var x = document.getElementById("menu");
-                              if (x.className.indexOf("w3-show") == -1) { 
-                                x.className += " w3-show";
-                              } else {
-                                x.className = x.className.replace(" w3-show", "");
-                              }
-                            }
-                        </script>
                     </div>
                 </div>
               </div>
