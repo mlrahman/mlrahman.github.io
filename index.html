@@ -34,7 +34,7 @@
             #particles-js{
               position: absolute;
               width: 100%;
-              height: 5000px;
+              height: 100%;
             }
 
         </style>
@@ -410,6 +410,33 @@
                         <a href="https://drive.google.com/file/d/1lr7LnnvfcxfRdPNADxo0eUi8F8sUqlRM/view?usp=sharing" style="text-decoration:none;margin:0px;" target="_blank"><p style="margin:0px;" class="w3-medium w3-text-red">Click here for Project Resource</p></a>
                     </div>
                     <hr>
+                    <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
+                        <p style="margin:0px;" class="w3-xlarge"><b>Online Shop Management System</b></p>
+                        <p class="w3-medium w3-text-teal" style="margin:0px;">HTML5, CSS3, W3CSS, PHP, MySQL, JavaScript, Ajax and JQuery</p>
+                        <p class="w3-medium w3-text-grey w3-justify" style="margin:0px;">
+                            Designed and developed a web application for an online shop management system which basic purpose was to made a platform to connect consumer and producer without facing any hassle. 
+                        </p>
+                        <a href="https://github.com/mlrahman/Online-Shop-Management" style="text-decoration:none;margin:0px;" target="_blank"><p style="margin:0px;" class="w3-medium w3-text-red">Click here for Project Resource</p></a>
+                    </div>
+                    <hr>
+                    <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
+                        <p style="margin:0px;" class="w3-xlarge"><b>University Result Management System</b></p>
+                        <p class="w3-medium w3-text-teal" style="margin:0px;">HTML, CSS, W3CSS, PHP, MySQL, JavaScript</p>
+                        <p class="w3-medium w3-text-grey w3-justify" style="margin:0px;">
+                            Designed and developed a web application for the result management procedure of a university. This application builds with all the facilities of the controller of the result. Also, it provides flexibility to teachers and students to publish and access the result with a lot of dynamic features.
+                        </p>
+                        <a href="https://github.com/mlrahman/University-Result-Management-Website" style="text-decoration:none;margin:0px;" target="_blank"><p style="margin:0px;" class="w3-medium w3-text-red">Click here for Project Resource</p></a>
+                    </div>
+                    <hr>
+                    <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
+                        <p style="margin:0px;" class="w3-xlarge"><b>2DOF Robotic Arm</b></p>
+                        <p class="w3-medium w3-text-teal" style="margin:0px;">Arduino, Forward and Inverse Kinematics, Serial Communication</p>
+                        <p class="w3-medium w3-text-grey w3-justify" style="margin:0px;">
+                            This 2DOF robotic arm was designed for writing different shapes and characters and it can control via Bluetooth transmission system.
+                        </p>
+                        <a href="https://www.facebook.com/100010157320111/videos/405830239765550/" style="text-decoration:none;margin:0px;" target="_blank"><p style="margin:0px;" class="w3-medium w3-text-red">Click here for Project Video</p></a>
+                    </div>
+                    <hr>
                 </div>
                 <div  id="expand_section_6" class="w3-container w3-center w3-animate-zoom" style="margin:8px 0px 0px 0px;padding:0px;display:none;">
                     <button class="w3-btn w3-round-large w3-teal w3-small" onclick="expand(6)" ><i class="fa fa-angle-double-down"></i> See More</button>
@@ -427,7 +454,7 @@
                             </tr>
                             <tr>
                                 <td valign="top">Framework</td>
-                                <td valign="top" class="w3-text-gray">: Ajax, W3CSS, Java OpenCV</td> 
+                                <td valign="top" class="w3-text-gray">: Ajax, JQuery, W3CSS, Java OpenCV</td> 
                             </tr>
                             <tr>
                                 <td valign="top">Database</td>
@@ -479,13 +506,13 @@
                         document.getElementById("expand_section_"+i).style.display='none';
                         document.getElementById("parent_section").style.height='auto';
                         document.getElementById("section_"+i).style.height='auto';
-                        var x=document.getElementById("section_"+i).offsetHeight;
+                        /*var x=document.getElementById("section_"+i).offsetHeight;
                         x=x-483;
                         var y=document.getElementById("particles-js").offsetHeight;
                         y=y+x;
                         document.getElementById("particles-js").style.height=y+'px';
                         document.getElementById("particles-js").style.display='none';
-                        document.getElementById("particles-js").style.display='block';
+                        document.getElementById("particles-js").style.display='block';*/
                     }
                     function test_width(i)
                     {
@@ -512,17 +539,16 @@
                     document.getElementById("section_1").style.display='block';
                     sz_x=document.getElementById("main_body").offsetHeight;
                     sz_y=document.getElementById("main_body").offsetWidth;
-                    document.getElementById("particles-js").style.height=document.getElementById("main_body").offsetHeight+'px';
-                    document.getElementById("particles-js").style.width=document.getElementById("main_body").offsetWidth+'px';
+                    document.getElementById("particles-js").style.height=sz_x+'px';
+                    document.getElementById("particles-js").style.width=sz_y+'px';
                     test_width(1);
                     
                     function goto(j)
                     {
                            document.getElementById("parent_section").style.height='483px';
-                           document.getElementById("particles-js").style.height=sz_x+'px';
-                           document.getElementById("particles-js").style.width=sz_y+'px';
-                           document.getElementById("particles-js").style.display='none';
-                            for(var i=1;i<=8;i++){
+                           //document.getElementById("particles-js").style.height=sz_x+'px';
+                           //document.getElementById("particles-js").style.width=sz_y+'px';
+                           for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
@@ -534,7 +560,6 @@
                            
                            //console.log('new_set_height: '+document.getElementById("section_"+j).style.height);
                            test_width(j);
-                           document.getElementById("particles-js").style.display='block';
                     }
                     
                 </script>
