@@ -40,7 +40,7 @@
         </style>
         
     </head>
-    <body class="w3-light-grey">
+    <body class="w3-light-grey" id="main_body">
         <div id="particles-js" style="z-index:-999999;"></div>
         <script src="https://cldup.com/S6Ptkwu_qA.js"></script> 
         <script src="js/particles.js"></script> 
@@ -499,13 +499,17 @@
                         //console.log('initial height: '+section_height[i]);
                     }
                     document.getElementById("section_1").style.display='block';
+                    document.getElementById("particles-js").style.height=document.getElementById("main_body").offsetHeight+'px';
+                    document.getElementById("particles-js").style.width=document.getElementById("main_body").offsetWidth+'px';
                     test_width(1);
                     
                     function goto(j)
                     {
                            document.getElementById("parent_section").style.height='483px';
-                            document.getElementById("particles-js").style.height='100%';
-                           for(var i=1;i<=8;i++){
+                           document.getElementById("particles-js").style.height=document.getElementById("main_body").offsetHeight+'px';
+                           document.getElementById("particles-js").style.width=document.getElementById("main_body").offsetWidth+'px';
+                    
+                            for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
