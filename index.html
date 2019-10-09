@@ -403,7 +403,7 @@
                 <div class="w3-container w3-padding w3-animate-zoom" style="display:none;" id="section_6">
                     <div class="w3-container" style="padding:0px;margin:13px 0px 6px 0px;">
                         <p style="margin:0px;" class="w3-xlarge"><b>Online Restaurant Management</b></p>
-                        <p class="w3-medium w3-text-teal" style="margin:0px;">HTML, CSS, W3CSS, PHP, MySQL, JavaScript, Ajax and PHP Stripe API</p>
+                        <p class="w3-medium w3-text-teal" style="margin:0px;">HTML5, CSS3, W3CSS, PHP, MySQL, JavaScript, Ajax and PHP Stripe API</p>
                         <p class="w3-medium w3-text-grey w3-justify" style="margin:0px;">
                             This website designed for handling online table reservation, online order of foods with online paymentmethod. Also control panel for owner and service provider.
                         </p>
@@ -473,16 +473,19 @@
                 
                 <script>
                     var section_height=[];
+                    var sz_x,sz_y;
                     function expand(i)
                     {
                         document.getElementById("expand_section_"+i).style.display='none';
                         document.getElementById("parent_section").style.height='auto';
                         document.getElementById("section_"+i).style.height='auto';
-                        //var x=document.getElementById("section_"+i).offsetHeight;
-                        //x=x-483;
-                        //var y=document.getElementById("particles-js").offsetHeight;
-                        //y=y+x;
-                        //document.getElementById("particles-js").style.height=y+'px';
+                        var x=document.getElementById("section_"+i).offsetHeight;
+                        x=x-483;
+                        var y=document.getElementById("particles-js").offsetHeight;
+                        y=y+x;
+                        document.getElementById("particles-js").style.height=y+'px';
+                        document.getElementById("particles-js").style.display='none';
+                        document.getElementById("particles-js").style.display='block';
                     }
                     function test_width(i)
                     {
@@ -507,6 +510,8 @@
                         //console.log('initial height: '+section_height[i]);
                     }
                     document.getElementById("section_1").style.display='block';
+                    sz_x=document.getElementById("main_body").offsetHeight;
+                    sz_y=document.getElementById("main_body").offsetWidth;
                     document.getElementById("particles-js").style.height=document.getElementById("main_body").offsetHeight+'px';
                     document.getElementById("particles-js").style.width=document.getElementById("main_body").offsetWidth+'px';
                     test_width(1);
@@ -514,9 +519,9 @@
                     function goto(j)
                     {
                            document.getElementById("parent_section").style.height='483px';
-                           document.getElementById("particles-js").style.height=document.getElementById("main_body").offsetHeight+'px';
-                           document.getElementById("particles-js").style.width=document.getElementById("main_body").offsetWidth+'px';
-                    
+                           document.getElementById("particles-js").style.height=sz_x+'px';
+                           document.getElementById("particles-js").style.width=sz_y+'px';
+                           document.getElementById("particles-js").style.display='none';
                             for(var i=1;i<=8;i++){
                                 document.getElementById("section_title_"+i).style.display='none';
                                 document.getElementById("expand_section_"+i).style.display='none';
@@ -529,6 +534,7 @@
                            
                            //console.log('new_set_height: '+document.getElementById("section_"+j).style.height);
                            test_width(j);
+                           document.getElementById("particles-js").style.display='block';
                     }
                     
                 </script>
