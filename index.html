@@ -588,7 +588,21 @@
                 </div>
                 <!-- End of section 8 -->
                 
-                <script>
+              </div>
+                
+            <!-- End Right Column -->
+            </div>
+
+          <!-- End Grid -->
+          </div>
+
+          <!-- End Page Container -->
+        </div>
+
+        <footer class="w3-container w3-teal w3-center">
+          <p style="font-size:18px;mrgin:0px;padding:0px;">Compiled by <a href="https://mlrahman.github.io" style="text-decoration:none;">Mir Lutfur Rahman</a></p>
+        </footer>
+            <script>
                     var section_height=[];
                     var sz_x,sz_y;
                     function expand(i)
@@ -610,7 +624,7 @@
                         
                         console.log('height: '+x);
                         //setTimeout(test_width, 1000);
-                        if(x>470)
+                        if(x>460)
                         {
                                document.getElementById("section_"+i).style.height='420px';
                                document.getElementById("section_"+i).style.overflow='hidden';
@@ -624,14 +638,14 @@
                         document.getElementById("section_"+i).style.display='block';
                         section_height[i]=document.getElementById("section_"+i).offsetHeight;
                         document.getElementById("section_"+i).style.display='none';
-                        //console.log('initial height: '+section_height[i]);
+                        console.log('initial height: '+section_height[i]);
                     }
                     document.getElementById("section_1").style.display='block';
                     sz_x=document.getElementById("main_body").offsetHeight;
                     sz_y=document.getElementById("main_body").offsetWidth;
                     document.getElementById("particles-js").style.height=sz_x+'px';
                     document.getElementById("particles-js").style.width=sz_y+'px';
-                    test_width(1);
+                    goto(1);
                     
                     function goto(j)
                     {
@@ -652,23 +666,6 @@
                            test_width(j);
                     }
                     
-                </script>
-              </div>
-                 
-              
-
-            <!-- End Right Column -->
-            </div>
-
-          <!-- End Grid -->
-          </div>
-
-          <!-- End Page Container -->
-        </div>
-
-        <footer class="w3-container w3-teal w3-center">
-          <p style="font-size:18px;mrgin:0px;padding:0px;">Compiled by <a href="https://mlrahman.github.io" style="text-decoration:none;">Mir Lutfur Rahman</a></p>
-        </footer>
-
+            </script>
     </body>
 </html>
