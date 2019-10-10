@@ -633,20 +633,23 @@
                         }
                     }
                     /* default call all the section */
-                    for(var i=1;i<=8;i++)
+                    function init()
                     {
-                        //document.getElementById("section_"+i).style.display='block';
-                        section_height[i]=document.getElementById("section_"+i).offsetHeight;
-                        //document.getElementById("section_"+i).style.display='none';
-                        console.log('ch_initial height: '+section_height[i]);
+                        for(var i=1;i<=8;i++)
+                        {
+                            document.getElementById("section_"+i).style.display='block';
+                            section_height[i]=document.getElementById("section_"+i).offsetHeight;
+                            document.getElementById("section_"+i).style.display='none';
+                            console.log('ch_initial height: '+section_height[i]);
+                        }
+                        document.getElementById("section_1").style.display='block';
+                        sz_x=document.getElementById("main_body").offsetHeight;
+                        sz_y=document.getElementById("main_body").offsetWidth;
+                        document.getElementById("particles-js").style.height=sz_x+'px';
+                        document.getElementById("particles-js").style.width=sz_y+'px';
+                        goto(1);
                     }
-                    document.getElementById("section_1").style.display='block';
-                    sz_x=document.getElementById("main_body").offsetHeight;
-                    sz_y=document.getElementById("main_body").offsetWidth;
-                    document.getElementById("particles-js").style.height=sz_x+'px';
-                    document.getElementById("particles-js").style.width=sz_y+'px';
-                    goto(1);
-                    
+                
                     function goto(j)
                     {
                            document.getElementById("parent_section").style.height='483px';
@@ -665,7 +668,7 @@
                            //console.log('new_set_height: '+document.getElementById("section_"+j).style.height);
                            test_width(j);
                     }
-                    
+                    window.onload=init; 
             </script>
     </body>
 </html>
