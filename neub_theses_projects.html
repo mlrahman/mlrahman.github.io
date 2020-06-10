@@ -148,9 +148,9 @@
                         
                         //console.log('height: '+x);
                         //setTimeout(test_width, 1000);
-                        if(x>460)
+                        if(x>571)
                         {
-                               document.getElementById("section_"+i).style.height='420px';
+                               document.getElementById("section_"+i).style.height='531px';
                                document.getElementById("section_"+i).style.overflow='hidden';
                                /* hide other expand button */
                                document.getElementById("expand_section_"+i).style.display='block';
@@ -171,12 +171,10 @@
                            document.getElementById("parent_section").style.height='599px';
                            //document.getElementById("particles-js").style.height=sz_x+'px';
                            //document.getElementById("particles-js").style.width=sz_y+'px';
-                           for(var i=1;i<=8;i++){
-                                document.getElementById("section_title_"+i).style.display='none';
+                           for(var i=1;i<=1;i++){
                                 document.getElementById("expand_section_"+i).style.display='none';
                                 document.getElementById("section_"+i).style.display='none';
                            }
-                           document.getElementById("section_title_"+j).style.display='block';
                            document.getElementById("section_"+j).style.display='block';
                            document.getElementById("section_"+j).style.overflow='visible';
                            document.getElementById("section_"+j).style.height=(section_height[j]+'px');
